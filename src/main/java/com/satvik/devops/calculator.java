@@ -43,11 +43,11 @@ public class calculator {
 	        //System.out.println("Multiplication: " + res);
 	    	return (a*b);
 	    }
-	    
+	    /*
 	    public static Integer Div( int a, int b ) {
 //	    	int res;
 //	    	res = a/b;
 	        //System.out.println("Division: " + res);
 	    	return (a/b);
-	    }
+	    }*/
 }
