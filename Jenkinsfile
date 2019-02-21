@@ -3,12 +3,16 @@ pipeline {
     stages { 
         stage('Clean') { 
             steps { 
-               echo 'This is a cleaning stage.' 
+	       withMaven(maven : 'Maven')
+	       echo "cleaning..."
+               sh "mvn clean" 
             }
         }
-	stage('package') {
+	stage('Package') {
             steps { 
-               echo 'This is a packaging stage.'
+               withMaven(maven : 'Maven')
+	       echo "Packaging..."
+               sh "mvn package"
         }
     }
 }
