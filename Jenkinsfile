@@ -13,6 +13,7 @@ pipeline {
                withMaven(maven : 'Maven')
 	       echo "Packaging..."
                sh "mvn package"
+	    }
         }
     }
 }
